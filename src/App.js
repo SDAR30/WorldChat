@@ -9,7 +9,6 @@ import {useAuthState} from 'react-firebase-hooks/auth'
 import {useCollectionData}  from 'react-firebase-hooks/firestore'
 
 firebase.initializeApp({
-  
 })
 
 const auth = firebase.auth(); //reference to auth sdk
@@ -45,7 +44,7 @@ function SignIn() {
   return (
     <>
       <button className="sign-in" onClick={signInWithGoogle}>Sign In</button>
-      <p>Say what you want with everyone in the world!</p>
+      <p className="firstpara" >Say what you want with everyone in the world!</p>
     </>
   )
 
@@ -113,7 +112,7 @@ function ChatMessage(props) {
 
   return (<>
     <div className={`message ${messageClass}`}>
-      <img src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'} alt="user"/>
+      <img src={photoURL || 'https://louisville.edu/enrollmentmanagement/images/person-icon/image'} alt="user"/>
       <p>{text}</p>
     </div>
   </>)

@@ -1,6 +1,6 @@
-# WorldChat using React and Firebase
+# WorldChat
 
-A simple fullstack chat demo with React and Firebase.
+A live fullstack chatroom using React and Firebase.
 
 ## Live Demo:
 
